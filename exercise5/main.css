@@ -1,0 +1,85 @@
+:root{
+    background-image: url("bats.gif");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: auto;
+    border: 5px solid black;
+    background: #FFF;
+}
+header{
+    border-bottom: 5px solid: black;
+    background: linear-gradient(45deg, #FFF, #FF9800 25%, #000);
+    flex: 100%;
+    padding:10px;
+    border-style: solid;
+    border-width:3px
+}
+.pic{
+    float:left
+}
+h1, h3, ul, p{
+	margin: 0px;
+	padding: 10px;
+}
+h1{
+    font-size: 28px
+}
+h1::first-letter{
+   font-size: 200%;
+}
+h2 {
+    margin: 10px;
+	padding:0px;
+    font-weight: 500;
+    margin: 0;
+}
+pre{
+    margin: 10px;
+	padding: 0px;
+}
+.alpha {
+    color : black;
+    font-size: 280%;
+    font-display: auto;
+}
+.bravo {
+    color: black;
+    font-size: 120%;
+}
+li {
+    margin: 0px;
+    padding:.04em;
+}
+#caption, #gallery {
+	text-align: center;
+}
+a{
+    color :orange;
+    font-weight: bold;
+    list-style-type: circle; 
+}
+li::before{
+    content: "•"; color: black;
+    display: inline-block; width: 1em;
+      margin-left: -1em}
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #000;
+    background: linear-gradient(45deg, #FFF, #FF9800 75%, #000);
+    flex: 100%;
+}
+pre{
+    font-size :110%;
+    margin:10px;
+}
+ul{
+    margin: 25px;
+    padding: 0;
+    float:left; 
+    height:500px;
+    width 160px;
+}
