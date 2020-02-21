@@ -6,6 +6,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 800px;
     margin: auto;
+    height: 100%;
+    padding-bottom: auto;
     border: 5px solid black;
     background: #FFF;
 }
@@ -20,7 +22,7 @@ header{
 .pic{
     float:left
 }
-h1, h3, ul, p{
+h1, h3, ul, uni {
 	margin: 0px;
 	padding: 10px;
 }
@@ -38,7 +40,7 @@ h2 {
 }
 pre{
     margin: 10px;
-	padding: 0px;
+	padding: 50px;
 }
 .alpha {
     color : black;
@@ -48,10 +50,16 @@ pre{
 .bravo {
     color: black;
     font-size: 120%;
+    float:center;
+    
 }
 li {
     margin: 0px;
     padding:.04em;
+    border: 3px solid black;
+    background-color: orange;
+    text-align: center;
+    
 }
 #caption, #gallery {
 	text-align: center;
@@ -59,27 +67,129 @@ li {
 a{
     color :orange;
     font-weight: bold;
-    list-style-type: circle; 
 }
 li::before{
-    content: "•"; color: black;
-    display: inline-block; width: 1em;
-      margin-left: -1em}
-footer{
+    display: inline-block; 
+    width: 1em;
+  margin-left: -1em
+}
+.footer{
     text-align: center;
     padding: 20px;
     border-top: 5px solid #000;
     background: linear-gradient(45deg, #FFF, #FF9800 75%, #000);
     flex: 100%;
+    border-bottom: 0px;
 }
-pre{
+.uni{
+    margin:10px;
+    width:600px;
+    float:right;
+    padding-left: 100px;
+}
+.p{
     font-size :110%;
     margin:10px;
+    width:600px;
+    float:right;
+    padding-left: 100px;
+    
+}
+.p1{
+    font-size :110%;
+    margin:10px;
+    width:600px;
+    float:right;
+}
+p{
+    font-size :110%;
+    margin:0px;
 }
 ul{
-    margin: 25px;
-    padding: 0;
-    float:left; 
-    height:500px;
-    width 160px;
+    list-style-type: none;
+  margin: 30px;
+  padding: 0;
+  width: 120px;
+    float:left;
+    position: absolute;
+    margin-top: 80px;
+    overflow: hidden;
+}
+li a {
+  display: block;
+  color: black;
+  height: 10px;
+  padding: 10px;
+  text-decoration: none;
+    text-align: left;
+}
+ul2{
+    list-style-type: none;
+      margin: 0px;
+      padding: 0px 109px;
+      overflow: hidden;
+      background-color: black;
+      display: block;
+}
+li2 a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  text-decoration: none;
+}
+li2 a:hover {
+  background-color: #111;
+}
+.size{
+    font-size:15px;
+    }
+nav{
+    border-top: 0px;
+    position: absolute;
+}
+li2 a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+}
+
+li2 a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li2.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+.currentLink {
+    color: orange;
 }
